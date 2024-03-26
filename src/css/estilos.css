@@ -1,0 +1,92 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagens/bg-repeat.jpg);
+    background-size: contain;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    max-width: 320px;
+    color: #fff;
+    margin: 50px;
+}
+
+.copy h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form{
+    max-width: 340px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 7px 0;
+}
+
+input::placeholder{
+    color: #a8a8a8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+textarea{
+    font-size: 0.9rem;
+    font-family: "Roboto" , sans-serif;
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    resize: none;
+}
+
+.instrucao{
+    margin-top: 10px;
+    margin-bottom: -14px;
+}
+
+.enviar{
+    background-color: #3ccc87;
+    padding: 15px;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.campo-obrigatorio{
+    border: 1px solid red;
+}
+
+.campo-preenchido{
+    border: 1px solid green;
+}
+
+.mensagem-alerta{
+    color: red;
+    font-size: 9px;
+    margin-top: -7px;
+    visibility: hidden;
+}
+
+.mostrar-erro{
+    visibility: visible;
+}
